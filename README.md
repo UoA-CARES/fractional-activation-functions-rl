@@ -5,6 +5,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![RL Algorithms](https://img.shields.io/badge/Algorithms-TD3%20%7C%20SAC-6f42c1.svg)](#experiments)
 
+<p align="center">
+  <img src="assets/fractional_activation_overview.png"
+       alt="Fractional activation functions across different fractional orders"
+       width="100%">
+</p>
+
+<p align="center">
+  <em>Fractional activation families across different fractional orders.</em>
+</p>
+
 A research repository for fractional-order activation functions in off-policy deep reinforcement learning.
 
 This project evaluates fractional activations as lightweight architectural modifications for actor and critic networks. The activations are integrated into Twin Delayed Deep Deterministic Policy Gradient (TD3) and Soft Actor-Critic (SAC), without changing their learning rules, replay mechanisms, target updates, optimizers, or training budgets.
@@ -129,8 +139,6 @@ Training outputs include the algorithm, environment, and training configurations
 
 ## Repository structure
 
-The public release is organized to separate the implementation, experiment configurations, analysis tools, and generated outputs:
-
 ```text
 fractional-activation-functions-rl/
 |-- cares_reinforcement_learning/   # TD3, SAC, networks, and activations
@@ -138,35 +146,13 @@ fractional-activation-functions-rl/
 |-- analysis/                       # AUC and statistical analysis scripts
 |-- results/                        # Processed tables and summary results
 |-- tests/                          # Activation and configuration tests
+|-- assets/                         # README figures
 |-- README.md
 |-- LICENSE
 `-- pyproject.toml
 ```
 
 Large raw training logs and model checkpoints are not stored directly in Git. Where released, they will be linked through an archival data record.
-
-## Citation
-
-If you use this research software or its fractional activation implementations, please cite the repository:
-
-```bibtex
-@software{yamani2026fractionalactivations,
-  title  = {Fractional Activation Functions for Off-Policy Reinforcement Learning},
-  author = {Yamani, Hoda and Williamson, Nathaniel and Mehta, Utkal and Williams, Henry},
-  year   = {2026},
-  publisher = {GitHub},
-  url    = {https://github.com/UoA-CARES/fractional-activation-functions-rl}
-}
-```
-
-## Contributors
-
-- Hoda Yamani, Centre for Automation and Robotic Engineering Science, The University of Auckland
-- Nathaniel Williamson, Centre for Automation and Robotic Engineering Science, The University of Auckland
-- Utkal Mehta, The University of the South Pacific
-- Henry Williams, Centre for Automation and Robotic Engineering Science, The University of Auckland
-
-For questions about the research or implementation, contact [Hoda Yamani](mailto:hoda.yamani@auckland.ac.nz) or open a GitHub issue.
 
 ## Acknowledgements
 
