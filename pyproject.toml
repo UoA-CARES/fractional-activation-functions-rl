@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractional-activation-functions-rl"
+version = "1.0.0"
+description = "Fractional activation functions for off-policy deep reinforcement learning with TD3 and SAC"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Hoda Yamani"}]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.0",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+gym = ["gymnasium[mujoco]>=0.29"]
+dmc = ["dm-control>=1.0"]
+test = ["pytest>=7.4"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Fractional Activation Functions for Off-Policy Deep Reinforcement Learning"
+type: software
+authors:
+  - family-names: Yamani
+    given-names: Hoda
+year: 2026
+repository-code: "https://github.com/UoA-CARES/fractional-activation-functions-rl"
+license: MIT
