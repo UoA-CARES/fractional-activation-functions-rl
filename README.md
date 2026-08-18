@@ -65,39 +65,34 @@ It is not intended to represent a quantity that should always be increased: diff
 
 The rectifier-based fractional formulation uses a Gamma-normalized fractional power:
 
-\[
-\operatorname{FReLU}_{\alpha}(x)
-=
-\begin{cases}
-\dfrac{x^{1-\alpha}}{\Gamma(2-\alpha)}, & x > 0,\\
-0, & x \leq 0.
-\end{cases}
-\]
+```text
+FReLU_alpha(x) = x^(1-alpha) / Gamma(2-alpha),   if x > 0
+                 0,                              otherwise
+```
 
 ### FLReLU
 
 FLReLU extends the same fractional transformation to the negative branch:
 
-\[
-\operatorname{FLReLU}_{\alpha}(x)
-=
-\begin{cases}
-\dfrac{x^{1-\alpha}}{\Gamma(2-\alpha)}, & x > 0,\\
--\dfrac{k(-x)^{1-\alpha}}{\Gamma(2-\alpha)}, & x < 0.
-\end{cases}
-\]
+```text
+FLReLU_alpha(x) =  x^(1-alpha) / Gamma(2-alpha),        if x > 0
+                  -k*(-x)^(1-alpha) / Gamma(2-alpha),   if x < 0
+                   0,                                    if x = 0
+```
+
+where `k` controls the negative-branch slope.
 
 ### FPReLU
 
-FPReLU introduces a parametric negative branch together with the fractional transformation.
+FPReLU introduces a learnable negative-branch coefficient while retaining the fractional power transformation. This allows the negative response to adapt during training while the fractional order `alpha` controls the nonlinear curvature.
 
 ### FGELU
 
-FGELU applies a finite fractional transformation to the GELU family, allowing the curvature of an already smooth activation to be modified through \(\alpha\).
+FGELU extends the smooth GELU activation through a finite fractional transformation. The fractional order `alpha` controls the degree of fractional modulation applied to the GELU response.
 
 ### FSwish
 
-FSwish extends the smooth Swish/SiLU family with a fractional correction controlled by \(\alpha\).
+FSwish extends the smooth Swish/SiLU family with a fractional correction controlled by the fractional order `alpha`.
 
 The implementations used in the experiments are located in:
 
@@ -112,8 +107,6 @@ src/frorl/models/legacy_activations.py
 ```
 
 They are preserved for provenance and compatibility but are **not part of the main experimental activation set**.
-
----
 
 ## Research Findings
 
