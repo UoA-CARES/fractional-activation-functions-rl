@@ -17,3 +17,7 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+
+# Generated analysis outputs
+analysis_outputs/*
+!analysis_outputs/.gitkeep
