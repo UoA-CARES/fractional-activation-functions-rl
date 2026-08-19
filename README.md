@@ -23,7 +23,7 @@ The experiments use **Twin Delayed Deep Deterministic Policy Gradient (TD3)** an
 
 ---
 
-## Overview
+## Overview 
 
 Activation functions define the nonlinear transformations used inside actor and critic networks.
 
