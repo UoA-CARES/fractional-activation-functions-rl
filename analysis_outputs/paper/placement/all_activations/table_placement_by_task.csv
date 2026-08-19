@@ -1,0 +1,9 @@
+task,all-actor,first-actor,all-critic,all-both,first-both
+Ant-v4,1,5,5,4,3
+Cartpole-Swingup,5,4,3,2,4
+Cheetah-Run,8,4,2,2,2
+Finger-Spin,6,2,5,4,1
+HalfCheetah-v4,1,4,3,3,7
+Hopper-v4,4,3,2,3,6
+Humanoid-v4,2,2,2,6,6
+Walker-Walk,8,3,2,2,3

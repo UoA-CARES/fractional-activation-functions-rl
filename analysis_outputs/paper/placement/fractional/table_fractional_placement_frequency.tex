@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Frequency of fractional activation placement appearing as the best configuration in the two-layer experiments. Counts are aggregated across 5 fractional activation families and 8 tasks for each algorithm, giving 40 comparisons per algorithm.}
+\label{tab:fractional-placement-frequency}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lcc}
+\toprule
+Placement Strategy & SAC (2-layer) & TD3 (2-layer) \\
+\midrule
+all-actor & 7 & 11 \\
+first-actor & 13 & 7 \\
+all-critic & 4 & 6 \\
+all-both & 5 & 6 \\
+first-both & 11 & 10 \\
+\bottomrule
+\end{tabular}
+\end{table}

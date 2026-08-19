@@ -1,0 +1,40 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\caption{Normalised area under the learning curve (AUC) ($\times 10^9$) (interquartile mean over five seeds) for \textbf{SAC} with \textbf{2layers} under placement \textbf{all-critic}. Best $\alpha$ per activation type in \textbf{bold}; overall best per task in \textbf{\textcolor{custompurple}{purple}}.}
+\label{tab:appendix_2layers_SAC_all_critic}
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l || >{\columncolor{gray!20}}c || *{5}{c} || *{5}{c} || *{5}{c} || *{5}{c} || *{5}{c}}
+\toprule
+\multirow{2}{*}{\textbf{Task}} & \multirow{2}{*}{\textbf{ReLU}} &
+\multicolumn{5}{c||}{\textbf{FReLU}} &
+\multicolumn{5}{c||}{\textbf{FLReLU}} &
+\multicolumn{5}{c||}{\textbf{FPReLU}} &
+\multicolumn{5}{c||}{\textbf{FSwish}} &
+\multicolumn{5}{c}{\textbf{FGELU}} \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-12}\cmidrule(lr){13-17}\cmidrule(lr){18-22}\cmidrule(lr){23-27}
+& & $\alpha{=}$0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 \\
+\toprule
+\textbf{Ant-v4} & \textbf{2.37} & \textbf{3.17} & 2.39 & 2.14 & 1.78 & 1.20 & \textbf{2.38} & 2.07 & 2.04 & 1.12 & 1.27 & 3.17 & \textbf{3.76} & 3.45 & 1.36 & 1.20 & 3.66 & 3.45 & 3.05 & \textcolor{custompurple}{\textbf{3.77}} & 2.84 & 3.45 & 2.85 & 3.44 & \textbf{3.58} & 2.82 \\
+\addlinespace[2pt]
+\textbf{Cartpole-Swingup} & \textbf{0.77} & 0.77 & 0.77 & 0.78 & \textbf{0.78} & 0.78 & 0.78 & 0.78 & 0.76 & \textcolor{custompurple}{\textbf{0.78}} & 0.77 & 0.74 & 0.76 & 0.77 & \textbf{0.78} & 0.78 & \textbf{0.78} & 0.78 & 0.77 & 0.78 & 0.78 & 0.77 & 0.76 & 0.75 & \textbf{0.77} & 0.72 \\
+\addlinespace[2pt]
+\textbf{Cheetah-Run} & \textbf{0.44} & \textbf{0.46} & 0.43 & 0.41 & 0.37 & 0.38 & \textbf{0.45} & 0.44 & 0.42 & 0.38 & 0.38 & 0.39 & \textbf{0.42} & 0.39 & 0.38 & 0.36 & 0.47 & \textbf{0.47} & 0.47 & 0.44 & 0.45 & \textcolor{custompurple}{\textbf{0.47}} & 0.46 & 0.44 & 0.44 & 0.45 \\
+\addlinespace[2pt]
+\textbf{Finger-Spin} & \textbf{0.73} & 0.78 & \textbf{0.79} & 0.73 & 0.74 & 0.69 & 0.76 & 0.76 & \textbf{0.79} & 0.73 & 0.74 & 0.70 & 0.73 & 0.76 & \textbf{0.76} & 0.73 & 0.70 & \textcolor{custompurple}{\textbf{0.81}} & 0.80 & 0.75 & 0.76 & \textbf{0.80} & 0.78 & 0.76 & 0.79 & 0.78 \\
+\addlinespace[2pt]
+\textbf{HalfCheetah-v4} & \textbf{6.81} & 7.13 & \textbf{7.31} & 6.11 & 7.01 & 6.79 & 7.39 & \textbf{7.67} & 6.91 & 6.46 & 5.91 & \textbf{6.45} & 5.76 & 6.05 & 3.78 & 5.48 & \textcolor{custompurple}{\textbf{8.77}} & 8.12 & 8.46 & 8.50 & 8.75 & 7.94 & \textbf{8.15} & 7.03 & 7.42 & 6.33 \\
+\addlinespace[2pt]
+\textbf{Hopper-v4} & \textbf{2.35} & \textcolor{custompurple}{\textbf{2.76}} & 2.64 & 2.52 & 2.21 & 2.27 & 2.39 & \textbf{2.55} & 2.36 & 2.38 & 2.35 & \textbf{2.76} & 2.75 & 2.43 & 2.36 & 2.68 & 2.36 & \textbf{2.56} & 2.17 & 2.10 & 2.24 & 2.37 & 2.51 & \textbf{2.64} & 2.46 & 2.30 \\
+\addlinespace[2pt]
+\textbf{Humanoid-v4} & \textbf{3.83} & 3.50 & 3.53 & 3.39 & \textbf{3.60} & 3.50 & 3.45 & 3.53 & 3.57 & 3.52 & \textbf{3.76} & 3.97 & 3.92 & 4.04 & 3.80 & \textcolor{custompurple}{\textbf{4.10}} & 3.76 & \textbf{3.91} & 3.76 & 3.74 & 3.77 & \textbf{3.91} & 3.80 & 3.72 & 3.86 & 3.86 \\
+\addlinespace[2pt]
+\textbf{Walker-Walk} & \textbf{0.78} & \textbf{0.75} & 0.74 & 0.73 & 0.54 & 0.69 & 0.78 & 0.73 & \textbf{0.83} & 0.71 & 0.69 & 0.62 & \textbf{0.71} & 0.67 & 0.68 & 0.63 & \textcolor{custompurple}{\textbf{0.84}} & 0.70 & 0.72 & 0.77 & 0.83 & \textbf{0.80} & 0.77 & 0.75 & 0.79 & 0.76 \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}}
+}
+\end{table*}

@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering
+\caption{Summary statistics of activation performance in the two-layer experiments. For each activation family, the table reports the average improvement relative to the ReLU baseline across the 16 algorithm--task pairs, the number of algorithm--task pairs where the activation outperforms ReLU, and the maximum observed improvement.}
+\label{tab:activation-summary}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lccc}
+\toprule
+Activation & Avg $\Delta\%$ & Tasks $>$ ReLU & Max $\Delta\%$ \\
+\midrule
+LReLU & +6.1 & 10 / 16 & +37.54 \\
+PReLU & +8.1 & 11 / 16 & +42.33 \\
+GELU & +10.6 & 15 / 16 & +40.85 \\
+Swish & +14.3 & 16 / 16 & +57.69 \\
+FReLU & +14.1 & 16 / 16 & +43.08 \\
+FLReLU & +14.8 & 16 / 16 & +63.04 \\
+FPReLU & +17.2 & 16 / 16 & +48.72 \\
+FGELU & +16.5 & 16 / 16 & +47.05 \\
+FSwish & +17.3 & 16 / 16 & +65.67 \\
+\bottomrule
+\end{tabular}
+\end{table}

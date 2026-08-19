@@ -1,0 +1,46 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{New activation results for the single-layer architecture under TD3. The table reports only Swish, GELU, FSwish, and FGELU. For each activation and task, the best configuration is selected using seed-level IQM of $\Delta\%$ AUC relative to ReLU.}
+\label{tab:new-results-td3-1layer}
+\begin{tabular}{llcc}
+\toprule
+Activation & Task & $\alpha$ & Best $\Delta\%$ \\
+\midrule
+FGELU & Ant-v4 & 0.5 & +6.6 \\
+FGELU & Cartpole-Swingup & 0.2 & +15.2 \\
+FGELU & Cheetah-Run & 0.5 & +14.4 \\
+FGELU & Finger-Spin & 0.5 & +31.9 \\
+FGELU & HalfCheetah-v4 & 0.5 & +65.7 \\
+FGELU & Hopper-v4 & 0.4 & +43.9 \\
+FGELU & Humanoid-v4 & 0.5 & +14.3 \\
+FGELU & Walker-Walk & 0.3 & +26.7 \\
+FSwish & Ant-v4 & 0.3 & +43.4 \\
+FSwish & Cartpole-Swingup & 0.5 & +4.3 \\
+FSwish & Cheetah-Run & 0.3 & +16.1 \\
+FSwish & Finger-Spin & 0.2 & +21.4 \\
+FSwish & HalfCheetah-v4 & 0.1 & +61.1 \\
+FSwish & Hopper-v4 & 0.1 & +49.6 \\
+FSwish & Humanoid-v4 & 0.4 & +14.5 \\
+FSwish & Walker-Walk & 0.4 & +23.9 \\
+GELU & Ant-v4 & -- & -17.7 \\
+GELU & Cartpole-Swingup & -- & -4.0 \\
+GELU & Cheetah-Run & -- & +2.5 \\
+GELU & Finger-Spin & -- & +11.1 \\
+GELU & HalfCheetah-v4 & -- & +33.3 \\
+GELU & Hopper-v4 & -- & +1.9 \\
+GELU & Humanoid-v4 & -- & -21.7 \\
+GELU & Walker-Walk & -- & +19.9 \\
+Swish & Ant-v4 & -- & -0.7 \\
+Swish & Cartpole-Swingup & -- & -30.9 \\
+Swish & Cheetah-Run & -- & +5.0 \\
+Swish & Finger-Spin & -- & -12.8 \\
+Swish & HalfCheetah-v4 & -- & +38.4 \\
+Swish & Hopper-v4 & -- & +34.9 \\
+Swish & Humanoid-v4 & -- & +17.4 \\
+Swish & Walker-Walk & -- & +32.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

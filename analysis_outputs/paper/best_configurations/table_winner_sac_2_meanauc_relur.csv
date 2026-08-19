@@ -1,0 +1,9 @@
+task,activation,alpha_key,placement,mean_auc,mean_auc_relu,delta,activation_label,alpha_print,placement_print
+Ant-v4,fswish,0.5,first-both,3930721286.6339684,2372622764.7592154,65.66987997490938,FSwish,0.5,first-both
+Cartpole-Swingup,flrelu,0.3,all-actor,796849459.8152974,765640778.4342302,4.07615193183549,FLReLU,0.3,all-actor
+Cheetah-Run,fprelu,0.3,all-actor,536997136.2512953,418412081.7445899,28.34168985089033,FPReLU,0.3,all-actor
+Finger-Spin,fprelu,0.3,first-actor,830729000.0,701096000.0,18.49004986478314,FPReLU,0.3,first-actor
+HalfCheetah-v4,fswish,0.1,all-critic,8683692290.819168,6850674489.653674,26.756749338095606,FSwish,0.1,all-critic
+Hopper-v4,fprelu,0.2,all-both,2885250326.951711,2333416292.847686,23.649189207921864,FPReLU,0.2,all-both
+Humanoid-v4,fprelu,0.3,all-both,4238073764.0009093,3819549534.547168,10.957423792210625,FPReLU,0.3,all-both
+Walker-Walk,fswish,0.5,all-actor,861976947.5650787,767541404.4895375,12.303641539487598,FSwish,0.5,all-actor

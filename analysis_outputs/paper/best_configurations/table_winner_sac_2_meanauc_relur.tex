@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Best configuration per task (SAC, 2-layer), mean AUC vs ReLU baseline.}
+\label{tab:winner-sac-2-meanauc-relur}
+\begin{tabular}{llllr}
+\toprule
+Task & Best Activation & Best $\alpha$ & Placement & $\Delta\%$ \\
+\midrule
+Ant-v4 & FSwish & 0.5 & first-both & +65.67 \\
+Cartpole-Swingup & FLReLU & 0.3 & all-actor & +4.08 \\
+Cheetah-Run & FPReLU & 0.3 & all-actor & +28.34 \\
+Finger-Spin & FPReLU & 0.3 & first-actor & +18.49 \\
+HalfCheetah-v4 & FSwish & 0.1 & all-critic & +26.76 \\
+Hopper-v4 & FPReLU & 0.2 & all-both & +23.65 \\
+Humanoid-v4 & FPReLU & 0.3 & all-both & +10.96 \\
+Walker-Walk & FSwish & 0.5 & all-actor & +12.30 \\
+\bottomrule
+\end{tabular}
+\end{table}

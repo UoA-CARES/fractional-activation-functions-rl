@@ -19,7 +19,9 @@ __pycache__/
 .pytest_cache/
 
 # Generated analysis outputs
-analysis_outputs/*
-!analysis_outputs/.gitkeep
 
-!analysis_outputs/README.md
+
+# Transient analysis working files
+analysis_outputs/run_manifest.csv
+analysis_outputs/run_manifest_missing_eval.csv
+analysis_outputs/auc/

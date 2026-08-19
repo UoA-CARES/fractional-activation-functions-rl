@@ -1,0 +1,46 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{New activation results for the two-layer architecture under TD3. The table reports only Swish, GELU, FSwish, and FGELU. For each activation and task, the best configuration is selected using seed-level IQM of $\Delta\%$ AUC relative to ReLU.}
+\label{tab:new-results-td3-2layers}
+\begin{tabular}{lllcc}
+\toprule
+Activation & Task & Placement & $\alpha$ & Best $\Delta\%$ \\
+\midrule
+FGELU & Ant-v4 & first-actor & 0.4 & +8.4 \\
+FGELU & Cartpole-Swingup & first-both & 0.4 & +4.6 \\
+FGELU & Cheetah-Run & all-critic & 0.5 & +9.3 \\
+FGELU & Finger-Spin & all-both & 0.1 & +14.2 \\
+FGELU & HalfCheetah-v4 & first-both & 0.4 & +46.4 \\
+FGELU & Hopper-v4 & all-both & 0.2 & +28.8 \\
+FGELU & Humanoid-v4 & all-both & 0.2 & +9.4 \\
+FGELU & Walker-Walk & all-actor & 0.3 & +13.0 \\
+FSwish & Ant-v4 & first-actor & 0.1 & +3.4 \\
+FSwish & Cartpole-Swingup & all-critic & 0.4 & +4.8 \\
+FSwish & Cheetah-Run & first-both & 0.3 & +4.7 \\
+FSwish & Finger-Spin & all-both & 0.3 & +13.3 \\
+FSwish & HalfCheetah-v4 & first-actor & 0.2 & +67.9 \\
+FSwish & Hopper-v4 & first-both & 0.5 & +29.5 \\
+FSwish & Humanoid-v4 & all-critic & 0.5 & +11.0 \\
+FSwish & Walker-Walk & first-both & 0.5 & +10.8 \\
+GELU & Ant-v4 & all-both & -- & +3.4 \\
+GELU & Cartpole-Swingup & all-both & -- & +3.1 \\
+GELU & Cheetah-Run & all-actor & -- & +3.3 \\
+GELU & Finger-Spin & all-actor & -- & +12.2 \\
+GELU & HalfCheetah-v4 & all-both & -- & +31.5 \\
+GELU & Hopper-v4 & first-both & -- & +30.4 \\
+GELU & Humanoid-v4 & first-actor & -- & +2.7 \\
+GELU & Walker-Walk & all-actor & -- & +11.2 \\
+Swish & Ant-v4 & first-both & -- & +8.8 \\
+Swish & Cartpole-Swingup & all-critic & -- & +1.8 \\
+Swish & Cheetah-Run & all-actor & -- & +2.6 \\
+Swish & Finger-Spin & all-both & -- & +11.5 \\
+Swish & HalfCheetah-v4 & first-both & -- & +49.7 \\
+Swish & Hopper-v4 & all-critic & -- & +24.8 \\
+Swish & Humanoid-v4 & all-critic & -- & +2.7 \\
+Swish & Walker-Walk & all-both & -- & +11.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

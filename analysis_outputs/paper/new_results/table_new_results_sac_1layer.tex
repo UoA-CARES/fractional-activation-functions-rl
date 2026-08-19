@@ -1,0 +1,46 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{New activation results for the single-layer architecture under SAC. The table reports only Swish, GELU, FSwish, and FGELU. For each activation and task, the best configuration is selected using seed-level IQM of $\Delta\%$ AUC relative to ReLU.}
+\label{tab:new-results-sac-1layer}
+\begin{tabular}{llcc}
+\toprule
+Activation & Task & $\alpha$ & Best $\Delta\%$ \\
+\midrule
+FGELU & Ant-v4 & 0.1 & +27.1 \\
+FGELU & Cartpole-Swingup & 0.2 & +3.0 \\
+FGELU & Cheetah-Run & 0.2 & +21.3 \\
+FGELU & Finger-Spin & 0.5 & +9.0 \\
+FGELU & HalfCheetah-v4 & 0.4 & +29.6 \\
+FGELU & Hopper-v4 & 0.4 & +58.4 \\
+FGELU & Humanoid-v4 & 0.1 & +5.1 \\
+FGELU & Walker-Walk & 0.1 & +10.2 \\
+FSwish & Ant-v4 & 0.1 & -0.9 \\
+FSwish & Cartpole-Swingup & 0.4 & +5.2 \\
+FSwish & Cheetah-Run & 0.2 & +35.5 \\
+FSwish & Finger-Spin & 0.4 & +6.8 \\
+FSwish & HalfCheetah-v4 & 0.4 & +22.0 \\
+FSwish & Hopper-v4 & 0.1 & +34.2 \\
+FSwish & Humanoid-v4 & 0.1 & +8.6 \\
+FSwish & Walker-Walk & 0.2 & +12.7 \\
+GELU & Ant-v4 & -- & +15.4 \\
+GELU & Cartpole-Swingup & -- & -6.3 \\
+GELU & Cheetah-Run & -- & +11.7 \\
+GELU & Finger-Spin & -- & -14.0 \\
+GELU & HalfCheetah-v4 & -- & +25.8 \\
+GELU & Hopper-v4 & -- & +45.4 \\
+GELU & Humanoid-v4 & -- & -12.9 \\
+GELU & Walker-Walk & -- & -1.9 \\
+Swish & Ant-v4 & -- & +21.4 \\
+Swish & Cartpole-Swingup & -- & -8.5 \\
+Swish & Cheetah-Run & -- & -8.1 \\
+Swish & Finger-Spin & -- & -35.6 \\
+Swish & HalfCheetah-v4 & -- & -20.4 \\
+Swish & Hopper-v4 & -- & +37.6 \\
+Swish & Humanoid-v4 & -- & -9.4 \\
+Swish & Walker-Walk & -- & +7.2 \\
+\bottomrule
+\end{tabular}
+\end{table}

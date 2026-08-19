@@ -1,0 +1,101 @@
+{\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{llllr}
+\caption{Best configuration per activation and task for SAC with a 2-layer network. Values report mean normalized AUC improvement relative to the ReLU baseline. The placement column indicates where the activation is applied.}\label{tab:best-per-activation-sac-2-meanauc-relur}\\
+\toprule
+Task & Activation & Best $\alpha$ & Best placement & $\Delta\%$ \\
+\midrule
+\endfirsthead
+\caption[]{Continued from previous page}\\
+\toprule
+Task & Activation & Best $\alpha$ & Best placement & $\Delta\%$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\emph{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Ant-v4 & ReLU & base & r & +0.00 \\
+Ant-v4 & LReLU & base & all-critic & +37.54 \\
+Ant-v4 & PReLU & base & first-actor & +42.33 \\
+Ant-v4 & Swish & base & all-both & +57.69 \\
+Ant-v4 & GELU & base & all-critic & +40.85 \\
+Ant-v4 & FReLU & 0.2 & first-actor & +43.08 \\
+Ant-v4 & FLReLU & 0.4 & first-actor & +34.09 \\
+Ant-v4 & FPReLU & 0.2 & all-critic & +48.72 \\
+Ant-v4 & FSwish & 0.5 & first-both & +65.67 \\
+Ant-v4 & FGELU & 0.4 & all-critic & +47.05 \\
+Cartpole-Swingup & ReLU & base & r & +0.00 \\
+Cartpole-Swingup & LReLU & base & all-critic & +0.96 \\
+Cartpole-Swingup & PReLU & base & all-actor & +1.61 \\
+Cartpole-Swingup & Swish & base & all-actor & +2.49 \\
+Cartpole-Swingup & GELU & base & first-both & +1.88 \\
+Cartpole-Swingup & FReLU & 0.5 & first-actor & +3.58 \\
+Cartpole-Swingup & FLReLU & 0.3 & all-actor & +4.08 \\
+Cartpole-Swingup & FPReLU & 0.5 & all-both & +2.78 \\
+Cartpole-Swingup & FSwish & 0.5 & first-actor & +3.26 \\
+Cartpole-Swingup & FGELU & 0.4 & first-both & +3.68 \\
+Cheetah-Run & ReLU & base & r & +0.00 \\
+Cheetah-Run & LReLU & base & all-both & +14.04 \\
+Cheetah-Run & PReLU & base & all-actor & +19.43 \\
+Cheetah-Run & Swish & base & all-actor & +17.52 \\
+Cheetah-Run & GELU & base & first-actor & +10.65 \\
+Cheetah-Run & FReLU & 0.1 & first-actor & +21.59 \\
+Cheetah-Run & FLReLU & 0.1 & all-actor & +20.86 \\
+Cheetah-Run & FPReLU & 0.3 & all-actor & +28.34 \\
+Cheetah-Run & FSwish & 0.5 & first-both & +16.55 \\
+Cheetah-Run & FGELU & 0.2 & first-actor & +20.16 \\
+Finger-Spin & ReLU & base & r & +0.00 \\
+Finger-Spin & LReLU & base & all-critic & +11.61 \\
+Finger-Spin & PReLU & base & all-actor & +14.44 \\
+Finger-Spin & Swish & base & first-actor & +12.14 \\
+Finger-Spin & GELU & base & all-actor & +11.77 \\
+Finger-Spin & FReLU & 0.5 & all-actor & +11.85 \\
+Finger-Spin & FLReLU & 0.3 & all-actor & +15.97 \\
+Finger-Spin & FPReLU & 0.3 & first-actor & +18.49 \\
+Finger-Spin & FSwish & 0.3 & all-critic & +16.76 \\
+Finger-Spin & FGELU & 0.1 & all-both & +15.48 \\
+HalfCheetah-v4 & ReLU & base & r & +0.00 \\
+HalfCheetah-v4 & LReLU & base & all-both & +13.58 \\
+HalfCheetah-v4 & PReLU & base & all-critic & +15.16 \\
+HalfCheetah-v4 & Swish & base & all-both & +21.69 \\
+HalfCheetah-v4 & GELU & base & all-critic & +5.91 \\
+HalfCheetah-v4 & FReLU & 0.2 & first-actor & +14.33 \\
+HalfCheetah-v4 & FLReLU & 0.3 & first-both & +11.38 \\
+HalfCheetah-v4 & FPReLU & 0.3 & first-both & +18.15 \\
+HalfCheetah-v4 & FSwish & 0.1 & all-critic & +26.76 \\
+HalfCheetah-v4 & FGELU & 0.1 & first-both & +17.76 \\
+Hopper-v4 & ReLU & base & r & +0.00 \\
+Hopper-v4 & LReLU & base & all-critic & +6.45 \\
+Hopper-v4 & PReLU & base & first-actor & +9.95 \\
+Hopper-v4 & Swish & base & all-actor & +7.59 \\
+Hopper-v4 & GELU & base & all-actor & +0.39 \\
+Hopper-v4 & FReLU & 0.2 & all-both & +22.06 \\
+Hopper-v4 & FLReLU & 0.3 & first-both & +15.13 \\
+Hopper-v4 & FPReLU & 0.2 & all-both & +23.65 \\
+Hopper-v4 & FSwish & 0.1 & first-both & +13.89 \\
+Hopper-v4 & FGELU & 0.3 & first-both & +20.33 \\
+Humanoid-v4 & ReLU & base & r & +0.00 \\
+Humanoid-v4 & LReLU & base & first-both & -3.55 \\
+Humanoid-v4 & PReLU & base & all-both & +3.48 \\
+Humanoid-v4 & Swish & base & all-both & +4.06 \\
+Humanoid-v4 & GELU & base & all-both & +3.46 \\
+Humanoid-v4 & FReLU & 0.5 & first-both & +7.88 \\
+Humanoid-v4 & FLReLU & 0.5 & first-both & +9.75 \\
+Humanoid-v4 & FPReLU & 0.3 & all-both & +10.96 \\
+Humanoid-v4 & FSwish & 0.1 & first-actor & +5.72 \\
+Humanoid-v4 & FGELU & 0.4 & first-actor & +5.39 \\
+Walker-Walk & ReLU & base & r & +0.00 \\
+Walker-Walk & LReLU & base & all-both & +5.32 \\
+Walker-Walk & PReLU & base & all-actor & +7.28 \\
+Walker-Walk & Swish & base & all-actor & +9.23 \\
+Walker-Walk & GELU & base & all-critic & +8.67 \\
+Walker-Walk & FReLU & 0.1 & first-actor & +7.76 \\
+Walker-Walk & FLReLU & 0.1 & all-actor & +7.49 \\
+Walker-Walk & FPReLU & 0.5 & first-actor & +10.89 \\
+Walker-Walk & FSwish & 0.5 & all-actor & +12.30 \\
+Walker-Walk & FGELU & 0.1 & first-actor & +11.24 \\
+\end{longtable}
+}

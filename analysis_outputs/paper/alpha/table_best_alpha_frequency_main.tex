@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Best $\alpha$ frequency across tasks for fractional activations. Each cell reports the number of tasks for which a given $\alpha$ is selected as best, with the corresponding percentage in parentheses. For the two-layer setting, the best placement is selected for each task, activation, and $\alpha$.}
+\label{tab:best-alpha-frequency-main}
+\small
+\begin{tabular}{lcccccccccccccccccccc}
+\toprule
+\multirow{2}{*}{Activation} & \multicolumn{5}{c}{SAC 1-layer} & \multicolumn{5}{c}{SAC 2-layer} & \multicolumn{5}{c}{TD3 1-layer} & \multicolumn{5}{c}{TD3 2-layer} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}\cmidrule(lr){12-16}\cmidrule(lr){17-21}
+ & $\alpha=0.1$ & $\alpha=0.2$ & $\alpha=0.3$ & $\alpha=0.4$ & $\alpha=0.5$ & $\alpha=0.1$ & $\alpha=0.2$ & $\alpha=0.3$ & $\alpha=0.4$ & $\alpha=0.5$ & $\alpha=0.1$ & $\alpha=0.2$ & $\alpha=0.3$ & $\alpha=0.4$ & $\alpha=0.5$ & $\alpha=0.1$ & $\alpha=0.2$ & $\alpha=0.3$ & $\alpha=0.4$ & $\alpha=0.5$ \\
+\midrule
+FReLU & 2 (25\%) & 4 (50\%) & 2 (25\%) & - & - & 2 (25\%) & 3 (38\%) & - & - & 3 (38\%) & 3 (38\%) & 1 (12\%) & 3 (38\%) & 1 (12\%) & - & 3 (38\%) & 1 (12\%) & 1 (12\%) & 1 (12\%) & 2 (25\%) \\
+FLReLU & 3 (38\%) & 2 (25\%) & - & 3 (38\%) & - & 2 (25\%) & - & 4 (50\%) & 1 (12\%) & 1 (12\%) & - & 3 (38\%) & 2 (25\%) & 2 (25\%) & 1 (12\%) & 6 (75\%) & 1 (12\%) & - & - & 1 (12\%) \\
+FPReLU & 3 (38\%) & 2 (25\%) & 2 (25\%) & - & 1 (12\%) & - & 2 (25\%) & 4 (50\%) & - & 2 (25\%) & 3 (38\%) & 3 (38\%) & 2 (25\%) & - & - & 4 (50\%) & 1 (12\%) & 1 (12\%) & 1 (12\%) & 1 (12\%) \\
+FGELU & 4 (50\%) & 2 (25\%) & - & 1 (12\%) & 1 (12\%) & 3 (38\%) & 1 (12\%) & 1 (12\%) & 3 (38\%) & - & - & 1 (12\%) & 2 (25\%) & 1 (12\%) & 4 (50\%) & 1 (12\%) & 1 (12\%) & 1 (12\%) & 4 (50\%) & 1 (12\%) \\
+FSwish & 3 (38\%) & 2 (25\%) & - & 2 (25\%) & 1 (12\%) & 3 (38\%) & - & 1 (12\%) & - & 4 (50\%) & 2 (25\%) & - & 2 (25\%) & 2 (25\%) & 2 (25\%) & 2 (25\%) & 1 (12\%) & 2 (25\%) & 1 (12\%) & 2 (25\%) \\
+\bottomrule
+\end{tabular}
+\end{table*}

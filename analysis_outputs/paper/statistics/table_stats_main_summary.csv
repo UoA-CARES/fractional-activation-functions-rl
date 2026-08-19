@@ -1,0 +1,5 @@
+algo,layers,positive,n,mean_delta,median_delta_pct,ci_positive,median_wilcoxon_p,sign_p,median_cliffs_delta,trend
+SAC,1layer,8,8,22.616824959886188,20.078787607573574,7,0.125,0.00390625,0.6799999999999999,Moderate improvement
+SAC,2layers,8,8,23.780596937516748,21.069619536352494,8,0.0625,0.00390625,0.8,Strong consistent improvement
+TD3,1layer,8,8,36.38540440304705,30.809888905660152,4,0.25,0.00390625,0.72,Strong practical improvement
+TD3,2layers,8,8,19.53646016414136,11.204940657430807,5,0.125,0.00390625,0.6,Consistent positive improvement

@@ -1,0 +1,11 @@
+algo,placement,avg_delta_pct,median_delta_pct,win_count,n
+SAC,first-both,9.8,9.2,59,72
+SAC,first-actor,9.5,8.0,61,72
+SAC,all-both,9.1,7.1,62,72
+SAC,all-critic,8.9,6.0,55,72
+SAC,all-actor,8.3,7.4,58,72
+TD3,first-both,3.3,1.6,45,72
+TD3,all-both,2.3,0.8,40,72
+TD3,all-actor,2.1,2.0,44,72
+TD3,first-actor,1.7,1.7,42,72
+TD3,all-critic,0.8,1.5,42,72

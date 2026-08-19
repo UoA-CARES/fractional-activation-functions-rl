@@ -1,0 +1,10 @@
+activation,avg_delta_pct,tasks_gt_relu,n_pairs,max_delta_pct,activation_label
+lrelu,6.1,10,16,37.54,LReLU
+prelu,8.1,11,16,42.33,PReLU
+gelu,10.6,15,16,40.85,GELU
+swish,14.3,16,16,57.69,Swish
+frelu,14.1,16,16,43.08,FReLU
+flrelu,14.8,16,16,63.04,FLReLU
+fprelu,17.2,16,16,48.72,FPReLU
+fgelu,16.5,16,16,47.05,FGELU
+fswish,17.3,16,16,65.67,FSwish

@@ -1,0 +1,17 @@
+algo,task,layers,placement,activation,mean_delta_pct
+SAC,Ant-v4,2layers,all-both,swish,57.7
+SAC,Cartpole-Swingup,1layer,none,prelu,2.6
+SAC,Cheetah-Run,2layers,all-actor,prelu,19.4
+SAC,Finger-Spin,2layers,all-actor,prelu,14.4
+SAC,HalfCheetah-v4,1layer,none,gelu,24.5
+SAC,Hopper-v4,1layer,none,fgelu,44.6
+SAC,Humanoid-v4,2layers,first-both,fprelu,7.6
+SAC,Walker-Walk,1layer,none,lrelu,20.7
+TD3,Ant-v4,1layer,none,lrelu,12.4
+TD3,Cartpole-Swingup,1layer,none,fgelu,6.7
+TD3,Cheetah-Run,1layer,none,fprelu,15.6
+TD3,Finger-Spin,1layer,none,lrelu,18.8
+TD3,HalfCheetah-v4,1layer,none,frelu,46.9
+TD3,Hopper-v4,1layer,none,swish,37.0
+TD3,Humanoid-v4,1layer,none,prelu,22.2
+TD3,Walker-Walk,1layer,none,swish,31.3

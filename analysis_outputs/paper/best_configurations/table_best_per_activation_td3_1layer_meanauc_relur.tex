@@ -1,0 +1,101 @@
+{\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{lllr}
+\caption{Best configuration per activation and task for TD3 with a 1-layer network. Values report mean normalized AUC improvement relative to the ReLU baseline.}\label{tab:best-per-activation-td3-1-meanauc-relur}\\
+\toprule
+Task & Activation & Best $\alpha$ & $\Delta\%$ \\
+\midrule
+\endfirsthead
+\caption[]{Continued from previous page}\\
+\toprule
+Task & Activation & Best $\alpha$ & $\Delta\%$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\emph{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Ant-v4 & ReLU & base & +0.00 \\
+Ant-v4 & LReLU & base & +12.41 \\
+Ant-v4 & PReLU & base & +4.38 \\
+Ant-v4 & Swish & base & +1.48 \\
+Ant-v4 & GELU & base & -10.84 \\
+Ant-v4 & FReLU & 0.3 & +8.89 \\
+Ant-v4 & FLReLU & 0.3 & +31.54 \\
+Ant-v4 & FPReLU & 0.2 & -13.94 \\
+Ant-v4 & FSwish & 0.3 & +35.75 \\
+Ant-v4 & FGELU & 0.5 & +4.26 \\
+Cartpole-Swingup & ReLU & base & +0.00 \\
+Cartpole-Swingup & LReLU & base & -7.89 \\
+Cartpole-Swingup & PReLU & base & +3.91 \\
+Cartpole-Swingup & Swish & base & -32.71 \\
+Cartpole-Swingup & GELU & base & -4.61 \\
+Cartpole-Swingup & FReLU & 0.2 & +7.42 \\
+Cartpole-Swingup & FLReLU & 0.3 & +6.93 \\
+Cartpole-Swingup & FPReLU & 0.2 & +3.90 \\
+Cartpole-Swingup & FSwish & 0.5 & +4.85 \\
+Cartpole-Swingup & FGELU & 0.2 & +12.16 \\
+Cheetah-Run & ReLU & base & +0.00 \\
+Cheetah-Run & LReLU & base & +11.25 \\
+Cheetah-Run & PReLU & base & +9.66 \\
+Cheetah-Run & Swish & base & +4.74 \\
+Cheetah-Run & GELU & base & +5.71 \\
+Cheetah-Run & FReLU & 0.4 & +16.99 \\
+Cheetah-Run & FLReLU & 0.4 & +21.78 \\
+Cheetah-Run & FPReLU & 0.3 & +29.43 \\
+Cheetah-Run & FSwish & 0.3 & +16.68 \\
+Cheetah-Run & FGELU & 0.5 & +17.28 \\
+Finger-Spin & ReLU & base & +0.00 \\
+Finger-Spin & LReLU & base & +18.85 \\
+Finger-Spin & PReLU & base & -12.42 \\
+Finger-Spin & Swish & base & -13.62 \\
+Finger-Spin & GELU & base & +3.71 \\
+Finger-Spin & FReLU & 0.1 & +24.80 \\
+Finger-Spin & FLReLU & 0.2 & +16.17 \\
+Finger-Spin & FPReLU & 0.1 & +17.53 \\
+Finger-Spin & FSwish & 0.5 & +20.25 \\
+Finger-Spin & FGELU & 0.5 & +32.19 \\
+HalfCheetah-v4 & ReLU & base & +0.00 \\
+HalfCheetah-v4 & LReLU & base & +32.22 \\
+HalfCheetah-v4 & PReLU & base & +17.17 \\
+HalfCheetah-v4 & Swish & base & +33.47 \\
+HalfCheetah-v4 & GELU & base & +30.28 \\
+HalfCheetah-v4 & FReLU & 0.3 & +79.67 \\
+HalfCheetah-v4 & FLReLU & 0.5 & +42.69 \\
+HalfCheetah-v4 & FPReLU & 0.3 & +42.03 \\
+HalfCheetah-v4 & FSwish & 0.1 & +50.73 \\
+HalfCheetah-v4 & FGELU & 0.5 & +47.19 \\
+Hopper-v4 & ReLU & base & +0.00 \\
+Hopper-v4 & LReLU & base & -7.55 \\
+Hopper-v4 & PReLU & base & -7.84 \\
+Hopper-v4 & Swish & base & +37.01 \\
+Hopper-v4 & GELU & base & +9.54 \\
+Hopper-v4 & FReLU & 0.1 & +26.17 \\
+Hopper-v4 & FLReLU & 0.2 & +15.63 \\
+Hopper-v4 & FPReLU & 0.1 & +65.26 \\
+Hopper-v4 & FSwish & 0.1 & +40.50 \\
+Hopper-v4 & FGELU & 0.4 & +41.53 \\
+Humanoid-v4 & ReLU & base & +0.00 \\
+Humanoid-v4 & LReLU & base & -26.40 \\
+Humanoid-v4 & PReLU & base & +22.17 \\
+Humanoid-v4 & Swish & base & +13.45 \\
+Humanoid-v4 & GELU & base & -16.72 \\
+Humanoid-v4 & FReLU & 0.3 & +5.76 \\
+Humanoid-v4 & FLReLU & 0.2 & +8.15 \\
+Humanoid-v4 & FPReLU & 0.1 & -32.10 \\
+Humanoid-v4 & FSwish & 0.4 & +7.15 \\
+Humanoid-v4 & FGELU & 0.3 & +7.48 \\
+Walker-Walk & ReLU & base & +0.00 \\
+Walker-Walk & LReLU & base & +1.16 \\
+Walker-Walk & PReLU & base & +17.85 \\
+Walker-Walk & Swish & base & +31.28 \\
+Walker-Walk & GELU & base & +19.17 \\
+Walker-Walk & FReLU & 0.1 & +28.48 \\
+Walker-Walk & FLReLU & 0.4 & -2.41 \\
+Walker-Walk & FPReLU & 0.2 & +17.76 \\
+Walker-Walk & FSwish & 0.4 & +21.76 \\
+Walker-Walk & FGELU & 0.3 & +23.96 \\
+\end{longtable}
+}

@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Frequency of activation placement appearing as the best configuration in the two-layer experiments. Counts are aggregated across 9 activation families and 8 tasks for each algorithm, giving 72 comparisons per algorithm.}
+\label{tab:placement-frequency-all}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lcc}
+\toprule
+Placement Strategy & SAC (2-layer) & TD3 (2-layer) \\
+\midrule
+all-actor & 17 & 18 \\
+first-actor & 17 & 10 \\
+all-critic & 12 & 12 \\
+all-both & 13 & 13 \\
+first-both & 13 & 19 \\
+\bottomrule
+\end{tabular}
+\end{table}

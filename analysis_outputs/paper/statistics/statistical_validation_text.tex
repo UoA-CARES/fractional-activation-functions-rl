@@ -1,0 +1,9 @@
+% =========================================================
+% Statistical validation text generated from table_stats_summary.csv
+% =========================================================
+
+Across all evaluated settings, fractional activations improve normalized AUC in 31 out of 32 task-level comparisons. This indicates a strong directional trend over the ReLU baseline across algorithms, network depths, and environments.
+
+The aggregate statistical results are summarized in Table~\ref{tab:stats-main}. The sign-test results evaluate whether positive improvements occur consistently across tasks, while the paired Wilcoxon signed-rank tests and Cliff's $\delta$ effect sizes provide seed-level statistical and practical evidence. Because each task uses five seeds, individual per-task Wilcoxon tests have limited statistical power and should be interpreted together with the aggregate sign-test and effect-size results.
+
+Full per-task statistical results, including bootstrap confidence intervals for AUC differences, paired Wilcoxon signed-rank tests, Cliff's $\delta$ effect sizes, selected activation configurations, fractional orders, and activation placements, are provided in Appendix~\ref{app:statistical-validation}.

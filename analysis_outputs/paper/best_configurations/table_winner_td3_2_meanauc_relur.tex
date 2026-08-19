@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Best configuration per task (TD3, 2-layer), mean AUC vs ReLU baseline.}
+\label{tab:winner-td3-2-meanauc-relur}
+\begin{tabular}{llllr}
+\toprule
+Task & Best Activation & Best $\alpha$ & Placement & $\Delta\%$ \\
+\midrule
+Ant-v4 & FGELU & 0.4 & first-actor & +8.79 \\
+Cartpole-Swingup & FSwish & 0.4 & all-critic & +4.68 \\
+Cheetah-Run & FPReLU & 0.4 & all-actor & +5.79 \\
+Finger-Spin & FGELU & 0.1 & all-both & +16.48 \\
+HalfCheetah-v4 & FLReLU & 0.1 & first-actor & +63.04 \\
+Hopper-v4 & FPReLU & 0.1 & all-actor & +35.09 \\
+Humanoid-v4 & FSwish & 0.5 & all-critic & +10.98 \\
+Walker-Walk & FGELU & 0.3 & all-actor & +11.43 \\
+\bottomrule
+\end{tabular}
+\end{table}

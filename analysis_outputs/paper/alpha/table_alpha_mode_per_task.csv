@@ -1,0 +1,9 @@
+Task,SAC Preferred alpha,TD3 Preferred alpha
+Ant-v4,$0.2$ (2/5),$0.1$ (3/5)
+Cartpole-Swingup,$0.5$ (3/5),$0.4$ (2/5)
+Cheetah-Run,$0.1$ (2/5),$0.1$ (2/5)
+Finger-Spin,$0.3$ (3/5),$0.1$ (3/5)
+HalfCheetah-v4,$0.1$ (2/5),$0.2$ (3/5)
+Hopper-v4,$0.2$ (2/5),$0.1$ (3/5)
+Humanoid-v4,$0.5$ (2/5),$0.2$ (2/5)
+Walker-Walk,$0.1$ (3/5),$0.1$ (2/5)

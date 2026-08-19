@@ -1,0 +1,46 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{New activation results for the two-layer architecture under SAC. The table reports only Swish, GELU, FSwish, and FGELU. For each activation and task, the best configuration is selected using seed-level IQM of $\Delta\%$ AUC relative to ReLU.}
+\label{tab:new-results-sac-2layers}
+\begin{tabular}{lllcc}
+\toprule
+Activation & Task & Placement & $\alpha$ & Best $\Delta\%$ \\
+\midrule
+FGELU & Ant-v4 & all-critic & 0.4 & +51.0 \\
+FGELU & Cartpole-Swingup & first-both & 0.5 & +5.0 \\
+FGELU & Cheetah-Run & first-actor & 0.2 & +19.9 \\
+FGELU & Finger-Spin & all-both & 0.1 & +14.6 \\
+FGELU & HalfCheetah-v4 & first-both & 0.1 & +19.2 \\
+FGELU & Hopper-v4 & first-both & 0.3 & +20.8 \\
+FGELU & Humanoid-v4 & first-actor & 0.1 & +5.0 \\
+FGELU & Walker-Walk & first-actor & 0.1 & +11.0 \\
+FSwish & Ant-v4 & first-both & 0.5 & +63.5 \\
+FSwish & Cartpole-Swingup & first-actor & 0.5 & +3.7 \\
+FSwish & Cheetah-Run & first-both & 0.5 & +17.6 \\
+FSwish & Finger-Spin & all-critic & 0.2 & +15.7 \\
+FSwish & HalfCheetah-v4 & all-critic & 0.1 & +28.1 \\
+FSwish & Hopper-v4 & first-both & 0.1 & +12.7 \\
+FSwish & Humanoid-v4 & first-actor & 0.1 & +7.1 \\
+FSwish & Walker-Walk & all-actor & 0.5 & +12.3 \\
+GELU & Ant-v4 & all-critic & -- & +43.4 \\
+GELU & Cartpole-Swingup & first-both & -- & +1.8 \\
+GELU & Cheetah-Run & all-both & -- & +11.4 \\
+GELU & Finger-Spin & all-actor & -- & +11.6 \\
+GELU & HalfCheetah-v4 & all-both & -- & +16.0 \\
+GELU & Hopper-v4 & all-critic & -- & +1.4 \\
+GELU & Humanoid-v4 & all-both & -- & +4.2 \\
+GELU & Walker-Walk & first-actor & -- & +9.5 \\
+Swish & Ant-v4 & all-critic & -- & +61.1 \\
+Swish & Cartpole-Swingup & all-actor & -- & +3.1 \\
+Swish & Cheetah-Run & all-actor & -- & +19.8 \\
+Swish & Finger-Spin & first-actor & -- & +12.1 \\
+Swish & HalfCheetah-v4 & all-both & -- & +20.9 \\
+Swish & Hopper-v4 & all-actor & -- & +7.5 \\
+Swish & Humanoid-v4 & all-both & -- & +3.1 \\
+Swish & Walker-Walk & all-actor & -- & +9.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+algo,task,best_1layer_delta_pct,best_2layers_delta_pct,diff_2minus1
+SAC,Ant-v4,21.1,57.7,36.6
+SAC,Cartpole-Swingup,2.6,2.5,-0.1
+SAC,Cheetah-Run,17.6,19.4,1.8
+SAC,Finger-Spin,0.6,14.4,13.8
+SAC,HalfCheetah-v4,24.5,21.7,-2.8
+SAC,Hopper-v4,44.6,15.0,-29.6
+SAC,Humanoid-v4,4.9,7.6,2.7
+SAC,Walker-Walk,20.7,9.2,-11.4
+TD3,Ant-v4,12.4,3.8,-8.6
+TD3,Cartpole-Swingup,6.7,2.9,-3.9
+TD3,Cheetah-Run,15.6,3.4,-12.2
+TD3,Finger-Spin,18.8,12.0,-6.8
+TD3,HalfCheetah-v4,46.9,46.0,-0.9
+TD3,Hopper-v4,37.0,29.4,-7.6
+TD3,Humanoid-v4,22.2,3.9,-18.3
+TD3,Walker-Walk,31.3,10.3,-20.9

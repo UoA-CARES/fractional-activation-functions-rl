@@ -1,0 +1,46 @@
+\begin{table*}[t]
+\centering
+\caption{Per-task statistical validation for the best fractional activation configuration relative to the ReLU baseline. $\Delta$ denotes the normalized AUC improvement over ReLU. CI denotes the bootstrap confidence interval of the paired AUC difference across seeds.}
+\label{tab:stats-appendix}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{lllccclccc}
+\toprule
+\textbf{Alg.} & \textbf{Depth} & \textbf{Task} & \textbf{Best config.} & \textbf{$\alpha$} & \textbf{Placement} & \textbf{$\Delta$} & \textbf{CI} & \textbf{$p_W$} & \textbf{Cliff's $\delta$} \\
+\midrule
+SAC & 1 layer & Ant-v4 & FGELU & $0.1$ & none & +32.7\% & [1.76e+08, 7.06e+08] & 0.1250 & 0.60 \\
+SAC & 1 layer & Cartpole-Swingup & FSwish & $0.4$ & none & +5.0\% & [1.96e+07, 5.57e+07] & 0.0625 & 0.92 \\
+SAC & 1 layer & Cheetah-Run & FSwish & $0.2$ & none & +30.8\% & [3.52e+07, 1.15e+08] & 0.1250 & 0.84 \\
+SAC & 1 layer & Finger-Spin & FGELU & $0.5$ & none & +8.6\% & [2.34e+07, 8.39e+07] & 0.0625 & 0.76 \\
+SAC & 1 layer & HalfCheetah-v4 & FReLU & $0.2$ & none & +28.5\% & [1.91e+08, 2.03e+09] & 0.1875 & 0.52 \\
+SAC & 1 layer & Hopper-v4 & FGELU & $0.1$ & none & +58.2\% & [3.95e+08, 1.26e+09] & 0.1250 & 0.84 \\
+SAC & 1 layer & Humanoid-v4 & FGELU & $0.1$ & none & +5.5\% & [6.79e+07, 2.97e+08] & 0.0625 & 0.36 \\
+SAC & 1 layer & Walker-Walk & FSwish & $0.2$ & none & +11.6\% & [-5.79e+07, 1.91e+08] & 0.6250 & 0.36 \\
+SAC & 2 layers & Ant-v4 & FSwish & $0.5$ & first-both & +65.7\% & [8.95e+08, 2.08e+09] & 0.0625 & 1.00 \\
+SAC & 2 layers & Cartpole-Swingup & FLReLU & $0.3$ & all-actor & +4.1\% & [8.20e+06, 5.42e+07] & 0.1250 & 0.68 \\
+SAC & 2 layers & Cheetah-Run & FPReLU & $0.3$ & all-actor & +28.3\% & [8.99e+07, 1.57e+08] & 0.0625 & 1.00 \\
+SAC & 2 layers & Finger-Spin & FPReLU & $0.3$ & first-actor & +18.5\% & [5.97e+07, 2.02e+08] & 0.0625 & 0.76 \\
+SAC & 2 layers & HalfCheetah-v4 & FSwish & $0.1$ & all-critic & +26.8\% & [1.29e+09, 2.38e+09] & 0.0625 & 0.84 \\
+SAC & 2 layers & Hopper-v4 & FPReLU & $0.2$ & all-both & +23.6\% & [3.94e+08, 7.79e+08] & 0.0625 & 0.76 \\
+SAC & 2 layers & Humanoid-v4 & FPReLU & $0.3$ & all-both & +11.0\% & [2.51e+08, 6.45e+08] & 0.0625 & 0.92 \\
+SAC & 2 layers & Walker-Walk & FSwish & $0.5$ & all-actor & +12.3\% & [1.77e+07, 1.73e+08] & 0.0625 & 0.76 \\
+TD3 & 1 layer & Ant-v4 & FSwish & $0.3$ & none & +35.8\% & [-3.16e+08, 1.31e+09] & 0.3125 & 0.60 \\
+TD3 & 1 layer & Cartpole-Swingup & FGELU & $0.2$ & none & +12.2\% & [-9.52e+06, 1.69e+08] & 0.3125 & 0.76 \\
+TD3 & 1 layer & Cheetah-Run & FPReLU & $0.3$ & none & +29.4\% & [3.50e+07, 1.28e+08] & 0.0625 & 0.92 \\
+TD3 & 1 layer & Finger-Spin & FGELU & $0.5$ & none & +32.2\% & [8.50e+05, 3.82e+08] & 0.1875 & 0.68 \\
+TD3 & 1 layer & HalfCheetah-v4 & FReLU & $0.3$ & none & +79.7\% & [1.12e+09, 2.53e+09] & 0.0625 & 1.00 \\
+TD3 & 1 layer & Hopper-v4 & FPReLU & $0.1$ & none & +65.3\% & [3.97e+08, 1.03e+09] & 0.0625 & 0.92 \\
+TD3 & 1 layer & Humanoid-v4 & FLReLU & $0.2$ & none & +8.2\% & [-7.08e+08, 1.07e+09] & 0.8125 & 0.20 \\
+TD3 & 1 layer & Walker-Walk & FReLU & $0.1$ & none & +28.5\% & [-2.98e+07, 3.61e+08] & 0.3125 & 0.52 \\
+TD3 & 2 layers & Ant-v4 & FGELU & $0.4$ & first-actor & +8.8\% & [7.80e+07, 4.38e+08] & 0.0625 & 0.52 \\
+TD3 & 2 layers & Cartpole-Swingup & FSwish & $0.4$ & all-critic & +4.7\% & [9.92e+06, 6.06e+07] & 0.1250 & 0.84 \\
+TD3 & 2 layers & Cheetah-Run & FPReLU & $0.4$ & all-actor & +5.8\% & [-8.28e+07, 1.18e+08] & 0.8125 & 0.12 \\
+TD3 & 2 layers & Finger-Spin & FGELU & $0.1$ & all-both & +16.5\% & [5.23e+07, 2.06e+08] & 0.0625 & 1.00 \\
+TD3 & 2 layers & HalfCheetah-v4 & FLReLU & $0.1$ & first-actor & +63.0\% & [3.56e+08, 3.65e+09] & 0.1250 & 0.60 \\
+TD3 & 2 layers & Hopper-v4 & FPReLU & $0.1$ & all-actor & +35.1\% & [-2.40e+07, 1.56e+09] & 0.3125 & 0.60 \\
+TD3 & 2 layers & Humanoid-v4 & FSwish & $0.5$ & all-critic & +11.0\% & [-9.60e+07, 7.72e+08] & 0.1875 & 0.60 \\
+TD3 & 2 layers & Walker-Walk & FGELU & $0.3$ & all-actor & +11.4\% & [6.55e+07, 1.07e+08] & 0.0625 & 0.76 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

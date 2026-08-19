@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Aggregate statistical validation comparing the best fractional activation configuration against the ReLU baseline across tasks. Pos. denotes the number of tasks where the fractional configuration achieved higher normalized AUC than ReLU. CI$>0$ denotes the number of tasks whose bootstrap confidence interval for the AUC difference is strictly positive. Med. $p_W$ is the median paired Wilcoxon signed-rank test $p$-value across tasks. The sign-test $p$ evaluates whether positive improvements occur consistently across tasks.}
+\label{tab:stats-main}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{llccccccc>{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Alg.} & \textbf{Depth} & \textbf{Pos.} & \textbf{CI$>0$} & \textbf{Mean $\Delta$} & \textbf{Median $\Delta$} & \textbf{Med. $p_W$} & \textbf{$p_{\mathrm{sign}}$} & \textbf{Med. $\delta$} & \textbf{Trend} \\
+\midrule
+SAC & 1 layer & 8/8 & 7/8 & +22.6\% & +20.1\% & 0.1250 & 0.0039 & 0.68 & Moderate improvement \\
+SAC & 2 layers & 8/8 & 8/8 & +23.8\% & +21.1\% & 0.0625 & 0.0039 & 0.80 & Strong consistent improvement \\
+TD3 & 1 layer & 8/8 & 4/8 & +36.4\% & +30.8\% & 0.2500 & 0.0039 & 0.72 & Strong practical improvement \\
+TD3 & 2 layers & 8/8 & 5/8 & +19.5\% & +11.2\% & 0.1250 & 0.0039 & 0.60 & Consistent positive improvement \\
+\bottomrule
+\end{tabularx}
+\end{table*}

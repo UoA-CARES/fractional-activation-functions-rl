@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering
+\caption{Most frequent best placement per task across both algorithms and all 5 fractional activation families in the two-layer experiments. Each row sums to 10, corresponding to 5 fractional activation families evaluated under TD3 and SAC.}
+\label{tab:fractional-placement-by-task}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lccccc}
+\toprule
+Task & all-actor & first-actor & all-critic & all-both & first-both \\
+\midrule
+Ant-v4 & 0 & 4 & 2 & 2 & 2 \\
+Cartpole-Swingup & 2 & 4 & 1 & 1 & 2 \\
+Cheetah-Run & 5 & 2 & 2 & 0 & 1 \\
+Finger-Spin & 3 & 1 & 2 & 3 & 1 \\
+HalfCheetah-v4 & 0 & 3 & 1 & 0 & 6 \\
+Hopper-v4 & 2 & 1 & 0 & 3 & 4 \\
+Humanoid-v4 & 1 & 2 & 1 & 2 & 4 \\
+Walker-Walk & 5 & 3 & 1 & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

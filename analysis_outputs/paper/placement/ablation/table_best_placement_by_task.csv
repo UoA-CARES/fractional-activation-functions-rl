@@ -1,0 +1,17 @@
+algo,task,placement,best_delta_pct_this_placement
+SAC,Ant-v4,first-both,65.7
+SAC,Cartpole-Swingup,all-actor,4.1
+SAC,Cheetah-Run,all-actor,28.3
+SAC,Finger-Spin,first-actor,18.5
+SAC,HalfCheetah-v4,all-critic,26.8
+SAC,Hopper-v4,all-both,23.6
+SAC,Humanoid-v4,all-both,11.0
+SAC,Walker-Walk,all-actor,12.3
+TD3,Ant-v4,first-actor,8.8
+TD3,Cartpole-Swingup,all-critic,4.7
+TD3,Cheetah-Run,all-actor,5.8
+TD3,Finger-Spin,all-both,16.5
+TD3,HalfCheetah-v4,first-actor,63.0
+TD3,Hopper-v4,all-actor,35.1
+TD3,Humanoid-v4,all-critic,11.0
+TD3,Walker-Walk,all-actor,11.4
