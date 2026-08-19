@@ -160,4 +160,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BrokenPipeError:
+        # Allow clean piping to commands such as `head`.
+        raise SystemExit(0)

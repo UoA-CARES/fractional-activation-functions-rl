@@ -53,8 +53,12 @@ from frorl.training.train_loop import train
 
 STANDARD_ACTIVATIONS = {
     "relu": "ReLU",
+    "lrelu": "LReLU",
+    "leakyrelu": "LReLU",
+    "prelu": "PReLU",
     "gelu": "GELU",
-    "silu": "SiLU",
+    "swish": "Swish",
+    "silu": "Swish",
     "tanh": "Tanh",
 }
 
@@ -112,7 +116,24 @@ def make_activation_layer(
 ) -> FunctionLayer:
     activation_name = canonical_activation(activation_name)
 
-    if activation_name in STANDARD_ACTIVATIONS.values():
+    # Paper baselines use the same parameterisation as the experiments.
+    if activation_name == "LReLU":
+        return FunctionLayer(
+            layer_type="LeakyReLU",
+            params={"negative_slope": 0.1},
+        )
+
+    if activation_name == "PReLU":
+        return FunctionLayer(
+            layer_type="PReLU",
+            params={"init": 0.25},
+        )
+
+    # PyTorch implements Swish as SiLU.
+    if activation_name == "Swish":
+        return FunctionLayer(layer_type="SiLU")
+
+    if activation_name in {"ReLU", "GELU", "Tanh"}:
         return FunctionLayer(layer_type=activation_name)
 
     if alpha is None:
