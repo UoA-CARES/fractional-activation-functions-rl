@@ -638,9 +638,7 @@ This allows the effect of activation-function design to be studied independently
 
 ---
 
-# Relationship to CARES Reinforcement Learning
 
-This repository originates from experimental work developed using the open-source [CARES Reinforcement Learning](https://github.com/UoA-CARES/cares_reinforcement_learning) framework.
 
 For publication and reproducibility, the code relevant to the fractional-activation study has been extracted into this smaller standalone repository.
 
@@ -660,7 +658,6 @@ This avoids requiring the full CARES RL codebase to reproduce the activation stu
 
 This work was developed within the **Centre for Automation and Robotic Engineering Science (CARES)** at **The University of Auckland**.
 
-The original experimental infrastructure builds on the open-source CARES Reinforcement Learning framework.
 
 ---
 
