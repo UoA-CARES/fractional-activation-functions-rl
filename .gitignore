@@ -1,0 +1,23 @@
+
+*.egg-info/
+
+# Local smoke-test outputs
+smoke_test/
+smoke_test_all/
+
+# Local source-verification material
+reference/
+
+# Generated checkpoints
+*.pth
+*.pt
+
+# Python caches / package metadata
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Generated analysis outputs
+analysis_outputs/*
+!analysis_outputs/.gitkeep
