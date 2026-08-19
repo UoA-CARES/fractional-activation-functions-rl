@@ -517,27 +517,6 @@ Each experiment records information including:
 
 ---
 
-## Normalized Area Under the Learning Curve
-
-Normalized AUC can be computed using:
-
-```bash
-python scripts/analyze_auc.py \
-  --results results/
-```
-
-For a learning curve \(R(t)\) evaluated over training budget \(T\),
-
-\[
-\operatorname{AUC}_{\mathrm{norm}}
-=
-\frac{1}{T}
-\int_0^T R(t)\,dt.
-\]
-
-This captures learning performance across the complete training trajectory rather than relying only on the final evaluation point.
-
----
 
 # Reproducibility
 
