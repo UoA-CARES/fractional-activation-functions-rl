@@ -21,3 +21,5 @@ __pycache__/
 # Generated analysis outputs
 analysis_outputs/*
 !analysis_outputs/.gitkeep
+
+!analysis_outputs/README.md
