@@ -103,7 +103,7 @@ src/frorl/models/activations.py
 Earlier experimental activation variants retained from the original research code are isolated in:
 
 ```text
-src/frorl/models/legacy_activations.py
+src/frorl/models/fractional_activations.py
 ```
 
 They are preserved for provenance and compatibility but are **not part of the main experimental activation set**.
@@ -573,7 +573,7 @@ fractional-activation-functions-rl/
 |       |
 |       |-- models/
 |       |   |-- activations.py
-|       |   |-- legacy_activations.py
+|       |   |-- fractional_activations.py
 |       |   `-- networks.py
 |       |
 |       |-- memory/

@@ -688,7 +688,7 @@ def main() -> None:
     )
 
     # Historical paper layout.
-    legacy_rows = build_rows(
+    paper_layout_rows = build_rows(
         root,
         strict_eval=False,
     )
@@ -698,9 +698,9 @@ def main() -> None:
 
     records = []
 
-    for row in legacy_rows:
+    for row in paper_layout_rows:
         record = row.__dict__.copy()
-        record["layout"] = "paper_legacy"
+        record["layout"] = "paper_layout"
         records.append(record)
 
     for row in standalone_rows:

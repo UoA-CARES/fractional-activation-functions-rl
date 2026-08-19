@@ -32,8 +32,6 @@ analysis/
 │   ├── results_tables.py
 │   ├── statistical_validation.py
 │   └── statistical_validation_from_auc.py
-└── legacy/
-    └── historical working scripts and figure-generation code
 ```
 
 ## Core portable pipeline
@@ -200,23 +198,3 @@ For this reason, the repository retains complementary evidence including:
 
 With five paired seeds, exact two-sided tests have coarse p-value resolution. Effect size and consistency are therefore important alongside p-values.
 
-## Legacy analysis
-
-`analysis/legacy/` preserves historical scripts and working filenames for research provenance.
-
-For new use, prefer:
-
-```text
-analysis/pipeline/
-analysis/paper/
-```
-
-Generated outputs are written under `analysis_outputs/` and are excluded from version control.
-
-## Result-root configuration
-
-Paper-analysis scripts do not depend on a user-specific filesystem path.
-
-Set the experiment root when required with `export FRORL_RESULTS_ROOT=/path/to/experiment/root`.
-
-If the variable is not set, the scripts use `results/` as the default root.
