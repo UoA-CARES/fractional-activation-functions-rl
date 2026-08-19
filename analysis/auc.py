@@ -17,7 +17,7 @@ def normalized_auc(steps, rewards, budget: float, anchor_at_zero: bool = True) -
         steps=np.concatenate([steps,[budget]]); rewards=np.concatenate([rewards,[rewards[-1]]])
     keep=np.concatenate([[True],np.diff(steps)>0]); steps,rewards=steps[keep],rewards[keep]
     if steps.size<2: raise ValueError('need at least two distinct step values')
-    return float(np.trapezoid(rewards,steps))/float(budget)
+    return float(np.trapz(rewards,steps))/float(budget)
 
 
 def read_eval(path: Path):
