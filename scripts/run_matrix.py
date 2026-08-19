@@ -267,8 +267,21 @@ def main() -> None:
                 )
 
                 # Standard activation baselines.
+                #
+                # ReLU is the shared reference baseline. In the reported study
+                # it was run once per algorithm/task/architecture/seed because
+                # every ReLU "placement" is architecturally identical.
+                #
+                # LReLU, PReLU, GELU and Swish are activation comparisons and
+                # therefore follow the placement matrix in the two-layer study.
                 for activation in args.baselines:
-                    for placement in active_placements:
+                    baseline_placements = (
+                        ["all_both"]
+                        if activation.lower() == "relu"
+                        else active_placements
+                    )
+
+                    for placement in baseline_placements:
                         for seed in args.seeds:
                             jobs.append(
                                 build_command(
