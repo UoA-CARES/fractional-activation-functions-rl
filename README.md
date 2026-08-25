@@ -1,9 +1,11 @@
 # Fractional Activation Functions for Off-Policy Reinforcement Learning
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![TD3 & SAC](https://img.shields.io/badge/Algorithms-TD3%20%7C%20SAC-6F42C1)](#experiments)
+[![MuJoCo](https://img.shields.io/badge/Benchmark-MuJoCo-00599C)](https://mujoco.org/)
+[![DeepMind Control Suite](https://img.shields.io/badge/Benchmark-DeepMind%20Control%20Suite-blue)](https://github.com/google-deepmind/dm_control)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![RL Algorithms](https://img.shields.io/badge/Algorithms-TD3%20%7C%20SAC-6f42c1.svg)](#experiments)
 
 A PyTorch research implementation for studying **fractional-order activation functions in off-policy deep reinforcement learning**.
 
